@@ -30,6 +30,7 @@ void updateFirmware(String url) {
   client.setTimeout(12000 / 1000); // timeout argument is defined in seconds for setTimeout
   httpUpdate.setLedPin(2, HIGH);
   Serial.println("Uploading..");
+  Serial.println(">>Led at pin 2 should be blinking representing download speed");
   t_httpUpdate_return ret = httpUpdate.update(client, url);
   switch (ret) {
     case HTTP_UPDATE_FAILED:
