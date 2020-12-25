@@ -23,7 +23,7 @@ const char rootCACertificate[] PROGMEM = "-----BEGIN CERTIFICATE-----\n"
     "AfvDbbnvRG15RjF+Cv6pgsH/76tuIMRQyV+dTZsXjAzlAcmgQWpzU/qlULRuJQ/7\n"
     "TBj0/VLZjmmx6BEP3ojY+x1J96relc8geMJgEtslQIxq/H5COEBkEveegeGTLg==\n"
     "-----END CERTIFICATE-----\n";
-
+// function
 void updateFirmware(String url) {
   WiFiClientSecure client;
   client.setCACert(rootCACertificate);
